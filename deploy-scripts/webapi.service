@@ -1,0 +1,17 @@
+[Unit]
+Description=.NET BL327-WebAPI Web API
+
+[Service]
+WorkingDirectory=/var/www/
+ExecStart=/usr/bin/dotnet /var/www/BL327-WebAPI.dll
+Restart=always
+
+RestartSec=10
+KillSignal=SIGINT
+SyslogIdentifier=webapi
+Enviroment=ASPNETCORE_ENVIROMENT= Production
+Enviroment=DOTNET_PRINT_TELEMETRY_MESSAGE=false
+Enviroment=ASPNETCORE_URLS=http://*:80
+
+[Install]
+WantedBy=multi-user.target

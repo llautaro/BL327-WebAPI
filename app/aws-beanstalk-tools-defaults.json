@@ -1,0 +1,22 @@
+
+{
+    "region" : "us-east-1",
+    "configuration" : "Debug",
+    "framework"     : "net5.0",
+    "self-contained" : false,
+    "application"    : "BL327WebAPI",
+    "environment"    : "BL327WebAPI-dev",
+    "enable-xray"    : false,
+    "enhanced-health-type" : "basic",
+    "additional-options"   : "\"aws:autoscaling:launchconfiguration,SecurityGroups\"=\"sg-0d4ed1febe4490a36\";\"aws:ec2:vpc,Subnets\"=\"subnet-08165fe9db1de017c\"",
+    "solution-stack"       : "64bit Windows Server Core 2019 v2.10.0 running IIS 10.0",
+    "environment-type"     : "SingleInstance",
+    "cname"                : "bl327webapi-dev",
+    "instance-type"        : "t1.micro",
+    "key-pair"             : "",
+    "instance-profile"     : "aws-elasticbeanstalk-BL327WebAPI-dev",
+    "service-role"         : "aws-elasticbeanstalk-service-role",
+    "proxy-server"         : "nginx",
+    "app-path"             : "/",
+    "iis-website"          : "Default Web Site"
+}
